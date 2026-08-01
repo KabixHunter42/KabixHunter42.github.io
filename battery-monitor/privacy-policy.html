@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Battery Monitor</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-color: #f8fafc;
+                --card-bg: #ffffff;
+                --text-primary: #0f172a;
+                --text-secondary: #475569;
+                --accent-color: #0284c7;
+                --border-color: #e2e8f0;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 12px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--accent-color);
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        p, li {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background-color: var(--bg-color);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="subtitle">Effective Date: August 1, 2026 | App: Battery Monitor</div>
+
+    <p>Welcome to <strong>Battery Monitor</strong> ("we," "our," or "us"). We respect your privacy and are committed to protecting any information processed by our Android application.</p>
+    
+    <p>This Privacy Policy explains how information is collected, used, and safeguarded when you use our mobile application (<strong>Battery Monitor</strong>, package name <code>com.kabihunterx42.batterymonitor</code>).</p>
+
+    <h2>1. Information We Collect & How It Is Used</h2>
+    <p><strong>Battery Monitor is designed with privacy first.</strong> We do not collect, store, or transmit any Personally Identifiable Information (PII) such as your name, email address, phone number, or physical location to any private servers.</p>
+    
+    <ul>
+        <li><strong>Battery & Device Vitals:</strong> The app monitors battery level, charging status, voltage, temperature, and charging history. All this data remains 100% strictly local on your device.</li>
+        <li><strong>App Settings & Preferences:</strong> Your alarm thresholds, notification configurations, and display preferences are stored locally on your device via Android DataStore / Room database.</li>
+    </ul>
+
+    <h2>2. Third-Party Advertising (Google AdMob)</h2>
+    <p>Our app uses <strong>Google AdMob</strong> to display banner, interstitial, native, and rewarded advertisements. AdMob may collect and use pseudonymous data to serve personalized or contextual ads in compliance with Google's policies.</p>
+    
+    <p>Data collected by Google AdMob includes:</p>
+    <ul>
+        <li>Advertising ID (GAID) or device identifiers</li>
+        <li>IP address and broad location estimates</li>
+        <li>App interaction and ad performance metrics</li>
+    </ul>
+
+    <p>For more details on how Google uses and protects data, please review:</p>
+    <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy & Terms Policy</a></p>
+    <p><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How Google Uses Information From Apps That Use Their Services</a></p>
+
+    <h2>3. Android Device Permissions</h2>
+    <p>To provide real-time battery monitoring, our app requests the following system permissions:</p>
+    <ul>
+        <li><code>POST_NOTIFICATIONS</code>: Used exclusively to show the persistent battery status notification and trigger alarm notifications.</li>
+        <li><code>FOREGROUND_SERVICE</code>: Required to continuously read battery telemetry in the background when your device is charging or discharging.</li>
+        <li><code>INTERNET</code> & <code>ACCESS_NETWORK_STATE</code>: Required solely by the Google AdMob SDK to load and display advertisements.</li>
+    </ul>
+
+    <h2>4. Data Storage & Security</h2>
+    <p>All battery telemetry, log entries, and alarm configurations created within the app are stored exclusively in local device storage. We do not maintain any cloud databases or external user accounts.</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Our application does not knowingly target, solicit, or collect personal information from children under the age of 13. If you believe a child has provided data through the app, please contact us so we can take immediate corrective steps.</p>
+
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy periodically. Any updates will be published on this page with a revised "Effective Date." You are advised to review this policy periodically for any changes.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy, please feel free to contact us:</p>
+
+    <div class="contact-box">
+        <p><strong>Support Email:</strong> <a href="mailto:monsifelmoudden3030@gmail.com">monsifelmoudden3030@gmail.com</a></p>
+        <p><strong>Developer:</strong> Battery Monitor Team</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Battery Monitor. All rights reserved.
+</footer>
+
+</body>
+</html>
