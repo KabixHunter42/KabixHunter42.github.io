@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Phone Cleaner</title>
+    <meta name="description" content="Privacy Policy for Phone Cleaner app. Read how we protect your data, handle permissions, and respect user privacy.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3F51B5;
+            --primary-light: #5C6BC0;
+            --primary-dark: #303F9F;
+            --secondary: #00E676;
+            --secondary-dark: #00C853;
+            --accent-cyan: #00E5FF;
+            --bg-dark: #0B0F19;
+            --surface-dark: #151C2C;
+            --card-dark: #1E293B;
+            --border-dark: rgba(255, 255, 255, 0.08);
+            --text-dark-primary: #F8FAFC;
+            --text-dark-secondary: #94A3B8;
+            --bg-light: #F8FAFC;
+            --surface-light: #FFFFFF;
+            --card-light: #F1F5F9;
+            --border-light: rgba(0, 0, 0, 0.08);
+            --text-light-primary: #0F172A;
+            --text-light-secondary: #475569;
+            --shadow-glow: 0 0 25px rgba(63, 81, 181, 0.25);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --bg: var(--bg-dark);
+            --surface: var(--surface-dark);
+            --card: var(--card-dark);
+            --border: var(--border-dark);
+            --text-primary: var(--text-dark-primary);
+            --text-secondary: var(--text-dark-secondary);
+            --glass: rgba(30, 41, 59, 0.7);
+        }
+
+        [data-theme="light"] {
+            --bg: var(--bg-light);
+            --surface: var(--surface-light);
+            --card: var(--card-light);
+            --border: var(--border-light);
+            --text-primary: var(--text-light-primary);
+            --text-secondary: var(--text-light-secondary);
+            --glass: rgba(255, 255, 255, 0.85);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: var(--transition);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        /* Navbar Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .brand-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-glow);
+            overflow: hidden;
+        }
+
+        .brand-logo-img {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .brand-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: #FFFFFF;
+        }
+
+        .brand-text {
+            font-size: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #FFFFFF, var(--text-dark-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        [data-theme="light"] .brand-text {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .theme-toggle-btn {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: 10px 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .theme-toggle-btn:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Banner */
+        .hero {
+            padding: 60px 24px 40px;
+            text-align: center;
+            background: radial-gradient(circle at 50% 0%, rgba(63, 81, 181, 0.15), transparent 70%);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: rgba(0, 230, 118, 0.12);
+            border: 1px solid rgba(0, 230, 118, 0.3);
+            border-radius: 20px;
+            color: var(--secondary);
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px;
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 40px;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .sidebar-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .sidebar-nav a {
+            display: block;
+            padding: 10px 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            color: var(--text-primary);
+            background: rgba(63, 81, 181, 0.12);
+            border-left: 3px solid var(--primary);
+        }
+
+        /* Content Sections */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .card-section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .card-section:hover {
+            border-color: rgba(63, 81, 181, 0.3);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .section-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: rgba(63, 81, 181, 0.12);
+            color: var(--primary-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .section-header h2 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .card-section p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+
+        .card-section ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .card-section li {
+            position: relative;
+            padding-left: 28px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        .card-section li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--secondary);
+            font-weight: 800;
+        }
+
+        /* Grid Cards for Permissions */
+        .permissions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .perm-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            transition: var(--transition);
+        }
+
+        .perm-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+        }
+
+        .perm-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .perm-badge {
+            padding: 4px 10px;
+            border-radius: 8px;
+            background: rgba(63, 81, 181, 0.15);
+            color: var(--primary-light);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .perm-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .perm-card p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* Highlight Notice Box */
+        .notice-box {
+            background: linear-gradient(135deg, rgba(63, 81, 181, 0.1), rgba(0, 230, 118, 0.08));
+            border: 1px solid rgba(63, 81, 181, 0.25);
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 16px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .notice-icon {
+            font-size: 24px;
+            line-height: 1;
+        }
+
+        .notice-content h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: var(--text-primary);
+        }
+
+        .notice-content p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 24px;
+            text-align: center;
+            margin-top: 60px;
+            background: var(--surface);
+        }
+
+        footer p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 868px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body data-theme="dark">
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand">
+    <!-- YOUR CUSTOM APP ICON HERE -->
+    <img src="logo.png" alt="Phone Cleaner Icon" style="width: 42px; height: 42px; border-radius: 12px; object-fit: cover;">
+    <span class="brand-text">Phone Cleaner</span>
+</a>
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggle">
+                    <span id="themeIcon">☀️</span>
+                    <span id="themeText">Light Mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-badge">
+            <span>🔒 100% Local Processing & Data Privacy</span>
+        </div>
+        <h1>Privacy Policy</h1>
+        <p>Last Updated: August 14, 2026 • Effective Immediately</p>
+    </section>
+
+    <!-- Main Content Grid -->
+    <div class="container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-title">Contents</div>
+            <ul class="sidebar-nav">
+                <li><a href="#overview" class="active">1. Overview</a></li>
+                <li><a href="#data-collection">2. Data Collection</a></li>
+                <li><a href="#permissions">3. Device Permissions</a></li>
+                <li><a href="#admob">4. AdMob & Advertising</a></li>
+                <li><a href="#security">5. Data Security</a></li>
+                <li><a href="#contact">6. Contact & Support</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+
+            <!-- Section 1: Overview -->
+            <section id="overview" class="card-section">
+                <div class="section-header">
+                    <div class="section-icon">🛡️</div>
+                    <h2>1. Overview & Privacy Commitment</h2>
+                </div>
+                <p>Welcome to <strong>Phone Cleaner</strong>. Your privacy is paramount to us. This Privacy Policy details how our mobile application operates, how device permissions are utilized, and our strict commitment to safeguarding user privacy.</p>
+                <p><strong>Phone Cleaner</strong> is designed as a privacy-first, on-device utility application. All cleaning operations, duplicate photo analyses, storage calculations, and system performance optimizations are processed <strong>100% locally on your device</strong>.</p>
+                
+                <div class="notice-box">
+                    <div class="notice-icon">💡</div>
+                    <div class="notice-content">
+                        <h4>Zero Remote Server Storage</h4>
+                        <p>We do not operate external databases, cloud servers, or remote analytics pipelines to collect your personal files, photos, contacts, or documents.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Data Collection -->
+            <section id="data-collection" class="card-section">
+                <div class="section-header">
+                    <div class="section-icon">📊</div>
+                    <h2>2. Information Collection & Usage</h2>
+                </div>
+                <p>We believe in absolute data minimization. We do not collect, harvest, sell, or rent any personal information to third parties.</p>
+                <ul>
+                    <li><strong>No Personal Identifiers:</strong> We do not require account creation, email registration, names, phone numbers, or social logins.</li>
+                    <li><strong>No Photo or File Uploads:</strong> Photos, media files, downloads, and app caches analyzed during cleaning sessions never leave your local device storage.</li>
+                    <li><strong>No Location Tracking:</strong> We do not request, access, or track your GPS coordinates or precise geolocation data.</li>
+                </ul>
+            </section>
+
+            <!-- Section 3: Device Permissions -->
+            <section id="permissions" class="card-section">
+                <div class="section-header">
+                    <div class="section-icon">🔑</div>
+                    <h2>3. Required Device Permissions</h2>
+                </div>
+                <p>To provide high-performance device cleaning, storage management, and app locking, <strong>Phone Cleaner</strong> requests explicit Android framework permissions. Each permission is requested strictly for its core feature:</p>
+
+                <div class="permissions-grid">
+                    <!-- All Files Access -->
+                    <div class="perm-card">
+                        <div class="perm-header">
+                            <span class="perm-badge">Storage</span>
+                            <h3>All Files Access</h3>
+                        </div>
+                        <p>Allows the app to scan storage for temporary cache, obsolete APKs, empty folders, exact duplicate photos, and large files so you can reclaim space.</p>
+                    </div>
+
+                    <!-- App Usage Stats -->
+                    <div class="perm-card">
+                        <div class="perm-header">
+                            <span class="perm-badge">System</span>
+                            <h3>App Usage Access</h3>
+                        </div>
+                        <p>Allows identifying unused applications (e.g. apps unused over 30 or 90 days) so you can review and clean unused app storage.</p>
+                    </div>
+
+                    <!-- Accessibility Service -->
+                    <div class="perm-card">
+                        <div class="perm-header">
+                            <span class="perm-badge">Protection</span>
+                            <h3>Accessibility Service</h3>
+                        </div>
+                        <p>Used strictly by the <strong>App Lock</strong> feature to detect when a PIN-protected app is launched and display the lock screen overlay.</p>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="perm-card">
+                        <div class="perm-header">
+                            <span class="perm-badge">Alerts</span>
+                            <h3>Notifications</h3>
+                        </div>
+                        <p>Used to send local alerts when high storage usage or thermal temperature thresholds are detected on your device.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: AdMob & Third-Party Advertising -->
+            <section id="admob" class="card-section">
+                <div class="section-header">
+                    <div class="section-icon">📢</div>
+                    <h2>4. Advertising & Google AdMob SDK</h2>
+                </div>
+                <p>To support ongoing development and offer our cleaner tools for free, <strong>Phone Cleaner</strong> integrates <strong>Google AdMob</strong> advertising services.</p>
+                <p>Google AdMob may collect and process certain non-personally identifiable technical identifiers (such as Advertising ID, IP address, device specs, and app telemetry) to serve personalized or contextual advertisements in compliance with Google Play Developer Policies.</p>
+                <ul>
+                    <li>You can opt out of personalized ads via your device settings: <em>Settings → Google → Ads → Opt out of Ads Personalization</em>.</li>
+                    <li>For more information on Google's data practices, please review the <a href="https://policies.google.com/privacy" target="_blank" style="color: var(--primary-light); font-weight: 600;">Google Privacy Policy</a>.</li>
+                </ul>
+            </section>
+
+            <!-- Section 5: Data Security -->
+            <section id="security" class="card-section">
+                <div class="section-header">
+                    <div class="section-icon">⚡</div>
+                    <h2>5. Security & On-Device Integrity</h2>
+                </div>
+                <p>Your security is our top technical priority:</p>
+                <ul>
+                    <li><strong>SHA-256 Hash Verification:</strong> Duplicate file analysis calculates local cryptographic hashes on-device without transmitting file data.</li>
+                    <li><strong>Explicit Deletion Confirmation:</strong> No file, photo, video, or app is ever deleted automatically without your explicit manual tap and confirmation.</li>
+                    <li><strong>Standard Android Sandbox:</strong> The app operates within standard Android OS permission boundaries and sandbox controls.</li>
+                </ul>
+            </section>
+
+            <!-- Section 6: Contact & Support -->
+            <section id="contact" class="card-section">
+                <div class="section-header">
+                    <div class="section-icon">✉️</div>
+                    <h2>6. Contact Us & Policy Updates</h2>
+                </div>
+                <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or app security, please reach out to our engineering team:</p>
+                
+                <div class="notice-box" style="background: rgba(63, 81, 181, 0.1); border-color: rgba(63, 81, 181, 0.3);">
+                    <div class="notice-icon">📧</div>
+                    <div class="notice-content">
+                        <h4>Developer Contact Email</h4>
+                        <p>Email: <a href="mailto:support@phonecleaner.app" style="color: var(--primary-light); font-weight: 700;">support@phonecleaner.app</a></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Phone Cleaner. All rights reserved. Built with privacy & performance at core.</p>
+    </footer>
+
+    <!-- Interactive Theme & Scroll Script -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const body = document.body;
+
+        // Theme Toggle Functionality
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', newTheme);
+            
+            if (newTheme === 'light') {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark Mode';
+            } else {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light Mode';
+            }
+        });
+
+        // Smooth Active Navigation Highlighter
+        const links = document.querySelectorAll('.sidebar-nav a');
+        const sections = document.querySelectorAll('.card-section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            links.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
