@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #120C24;
+            --card-bg: rgba(26, 18, 48, 0.75);
+            --card-border: rgba(124, 58, 237, 0.25);
+            --text-primary: #F3F4F6;
+            --text-secondary: #9CA3AF;
+            --accent-purple: #7C3AED;
+            --accent-pink: #EC4899;
+            --accent-gradient: linear-gradient(135deg, #A78BFA 0%, #F472B6 100%);
+            --button-glow: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(124, 58, 237, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 85% 85%, rgba(236, 72, 153, 0.12) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 48px;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4),
+                        0 0 30px rgba(124, 58, 237, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .app-icon-wrapper {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px auto;
+            border-radius: 22px;
+            overflow: hidden;
+            background: var(--button-glow);
+            padding: 3px;
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.35);
+        }
+
+        .app-icon {
+            width: 100%;
+            height: 100%;
+            border-radius: 19px;
+            object-fit: cover;
+            background-color: #1A1230;
+            display: block;
+        }
+
+        .icon-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-size: 40px;
+            border-radius: 19px;
+            background: #1A1230;
+        }
+
+        .app-title {
+            font-size: 32px;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .effective-date {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 6px 16px;
+            background: rgba(124, 58, 237, 0.15);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            border-radius: 20px;
+            font-size: 13px;
+            color: #C4B5FD;
+            font-weight: 600;
+        }
+
+        .content-section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: var(--button-glow);
+            border-radius: 2px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #F3F4F6;
+        }
+
+        .highlight-box {
+            background: rgba(124, 58, 237, 0.1);
+            border-left: 4px solid var(--accent-purple);
+            padding: 18px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #E9D5FF;
+        }
+
+        a {
+            color: #C4B5FD;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #F472B6;
+            text-decoration: underline;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-card h3 {
+            color: #FFFFFF;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--button-glow);
+            color: #FFFFFF !important;
+            border-radius: 30px;
+            font-weight: 700;
+            margin-top: 12px;
+            box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none !important;
+        }
+
+        .contact-email:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(124, 58, 237, 0.45);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 13px;
+            color: #6B7280;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 12px;
+            }
+            .container {
+                padding: 24px 18px;
+                border-radius: 16px;
+            }
+            .app-title {
+                font-size: 26px;
+            }
+            .section-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="app-icon-wrapper">
+                <img src="icon.png" alt="Music Player Icon" class="app-icon" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="icon-placeholder" style="display: none;">🎵</div>
+            </div>
+            <h1 class="app-title">Music Player</h1>
+            <p class="page-subtitle">Privacy Policy</p>
+            <span class="effective-date">Last Updated: August 18, 2026</span>
+        </header>
+
+        <section class="content-section">
+            <h2 class="section-title">1. Introduction</h2>
+            <p>Welcome to <strong>Music Player</strong> ("we", "our", or "us"). We respect your privacy and are committed to protecting your personal information. This Privacy Policy outlines how our application collects, uses, and safeguards your information when you use our mobile application.</p>
+            <div class="highlight-box">
+                <p><strong>Core Privacy Guarantee:</strong> Music Player is built primarily as an offline music player. Your local audio files, playlists, and personal media stay on your device and are never uploaded to external servers.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">2. Device Permissions & Information Collection</h2>
+            <p>To provide high-fidelity offline audio playback, equalizer effects, lyrics, tag editing, and ringtone creation, our application requests access to certain device features:</p>
+            <ul>
+                <li><strong>Storage & Audio Access Permissions (READ_MEDIA_AUDIO / READ_EXTERNAL_STORAGE):</strong> Used exclusively to scan, index, and play local audio files stored on your device memory or SD card.</li>
+                <li><strong>Write Storage Access (WRITE_EXTERNAL_STORAGE / Audio Media Store):</strong> Required only when you use the built-in <strong>Tag Editor</strong> or <strong>Ringtone Cutter</strong> to save updated song metadata or new custom ringtone files to your device.</li>
+                <li><strong>System Settings Access (WRITE_SETTINGS):</strong> Optional permission requested only when you choose to set a custom trimmed audio file directly as your default phone Ringtone, Alarm, or Notification tone.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">3. Advertising Services (Google AdMob)</h2>
+            <p>Our application uses Google AdMob to display banner, native advanced, and interstitial advertisements to support ongoing app development. Google AdMob may collect and process device advertising identifiers and anonymized usage telemetry to serve relevant ads.</p>
+            <p>Google's privacy practices regarding advertising are governed by Google's Privacy Policy:</p>
+            <ul>
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">How Google AdMob uses data</a></li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">4. Local Data Storage & Preferences</h2>
+            <p>All your user settings, favorite songs, custom playlists, equalizer profiles, and lyrics configurations are stored locally on your device using Android Shared Preferences and local database storage.</p>
+            <p>We do not maintain external database servers or user accounts to track your listening history.</p>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">5. Children's Privacy</h2>
+            <p>Our application is intended for a general audience and does not knowingly collect personally identifiable information from children under the age of 13. If you believe your child has provided us with personal data, please contact us so we can take immediate corrective measures.</p>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">6. User Choices & Data Deletion</h2>
+            <p>You have full control over your data and device permissions:</p>
+            <ul>
+                <li><strong>Revoking Permissions:</strong> You can revoke device storage and audio permissions at any time via your Android Device Settings (<em>Settings &gt; Apps &gt; Music Player &gt; Permissions</em>).</li>
+                <li><strong>Clearing App Data:</strong> You can wipe all app preferences, cached lyrics, and custom playlists by clearing app storage (<em>Settings &gt; Apps &gt; Music Player &gt; Storage &gt; Clear Data</em>).</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">7. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy periodically to reflect app updates or regulatory compliance. Any changes will be posted on this page with an updated "Last Updated" date.</p>
+        </section>
+
+        <div class="contact-card">
+            <h3>Have Questions or Feedback?</h3>
+            <p>If you have any questions or suggestions about our Privacy Policy, please feel free to reach out to us:</p>
+            <a href="mailto:monsifelmoudden3030@gmail.com" class="contact-email">
+                ✉ Contact Support: monsifelmoudden3030@gmail.com
+            </a>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 Music Player. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
