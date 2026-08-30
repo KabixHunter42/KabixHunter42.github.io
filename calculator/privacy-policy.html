@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a74ee;
+            --primary-gradient: linear-gradient(135deg, #1a74ee 0%, #0d52b5 100%);
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-secondary: #475569;
+            --border: #e2e8f0;
+            --accent-bg: #f1f5f9;
+            --radius: 16dp;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #3b82f6;
+                --primary-gradient: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+                --bg: #0f172a;
+                --card-bg: #1e293b;
+                --text-main: #f8fafc;
+                --text-secondary: #94a3b8;
+                --border: #334155;
+                --accent-bg: #1e293b;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px 16px 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* App Branding Header */
+        .header-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px 24px;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo-container {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 16px;
+            border-radius: 22px;
+            overflow: hidden;
+            background: var(--accent-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border);
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .app-name {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+
+        .policy-title {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+
+        /* Main Policy Sections */
+        .section-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .section-card h2 {
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-card h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background: var(--primary-gradient);
+            border-radius: 2px;
+        }
+
+        .section-card p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .section-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-card ul {
+            list-style: none;
+            margin: 12px 0;
+        }
+
+        .section-card li {
+            position: relative;
+            padding-left: 24px;
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .section-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: rgba(26, 116, 238, 0.08);
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin: 14px 0;
+        }
+
+        .highlight-box p {
+            color: var(--text-main);
+            font-weight: 500;
+            margin: 0;
+        }
+
+        /* Contact Link Styling */
+        .contact-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            word-break: break-all;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- App Header & Logo Spot -->
+        <header class="header-card">
+            <div class="logo-container">
+                <!-- Dedicated spot for your logo image (place logo.png in the same folder) -->
+                <img src="logo.png" alt="Calculator App Logo" onerror="this.style.display='none'; this.parentNode.innerText='📱';">
+            </div>
+            <h1 class="app-name">Calculator</h1>
+            <div class="policy-title">Privacy Policy</div>
+            <div class="last-updated">Effective Date: August 30, 2026</div>
+        </header>
+
+        <!-- Introduction -->
+        <section class="section-card">
+            <h2>1. Introduction</h2>
+            <p>Welcome to <strong>Calculator</strong>. Your privacy is critically important to us. This Privacy Policy explains how our application collects, uses, and safeguards your information when you install and use our mobile application.</p>
+            <p>By downloading, installing, or using <strong>Calculator</strong>, you agree to the terms outlined in this Privacy Policy.</p>
+        </section>
+
+        <!-- Information Collection -->
+        <section class="section-card">
+            <h2>2. Information Collection & Storage</h2>
+            <p>We believe in data minimization. <strong>Calculator</strong> does not require user registration or personal identification to perform calculations.</p>
+            <ul>
+                <li><strong>Local History & Preferences:</strong> Your calculation history, theme preferences, and app settings are stored locally on your device. We do not transmit or upload your calculation history to any external servers.</li>
+                <li><strong>Device Information:</strong> We may collect non-personally identifiable technical information such as device model, OS version, and language preference solely for operating and optimizing the application performance.</li>
+            </ul>
+        </section>
+
+        <!-- Advertising & Third-Party Services -->
+        <section class="section-card">
+            <h2>3. Advertising & Third-Party Services</h2>
+            <p>Our app integrates third-party advertising services to provide a free experience. Specifically, we use <strong>Google AdMob</strong> (Google Mobile Ads SDK) to serve advertisements (Banner, Interstitial, Native, and App Open ads).</p>
+
+            <div class="highlight-box">
+                <p>Google AdMob may collect and process information such as Advertising ID (AAID), IP address, and interaction data to show personalized or non-personalized advertisements compliant with Google Advertising Policies.</p>
+            </div>
+
+            <p>For more information about how Google collects and uses your data, please review Google's official privacy policies:</p>
+            <ul>
+                <li><a class="contact-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy & Terms</a></li>
+                <li><a class="contact-link" href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google Uses Data in Apps</a></li>
+            </ul>
+        </section>
+
+        <!-- Data Security -->
+        <section class="section-card">
+            <h2>4. Data Security</h2>
+            <p>We implement standard security measures to protect the integrity of the application. Since your calculation data remains strictly on your local device storage, you retain full control over your stored history and settings at all times.</p>
+        </section>
+
+        <!-- Children's Privacy -->
+        <section class="section-card">
+            <h2>5. Children's Privacy</h2>
+            <p>Our application does not knowingly collect or solicit personal data from children under the age of 13. If you believe that a child has provided us with personal information, please contact us immediately so we can take appropriate measures.</p>
+        </section>
+
+        <!-- Policy Changes -->
+        <section class="section-card">
+            <h2>6. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy periodically to reflect app updates or regulatory changes. Any updates will be posted directly on this page with a revised effective date.</p>
+        </section>
+
+        <!-- Contact Us -->
+        <section class="section-card">
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or our practices, please contact us via email at:</p>
+            <div class="highlight-box">
+                <p>Email: <a class="contact-link" href="mailto:monsifelmoudden3030@gmail.com">monsifelmoudden3030@gmail.com</a></p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Calculator App. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
