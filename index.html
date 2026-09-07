@@ -1,0 +1,31 @@
+Let activeCategory = 'all';
+ دع searchQuery = '';
+ تطبيق مرشح الوظيفة () {
+   appCards.forEach(card => {
+     فئة const =card.getAttribute('فئة البيانات');
+     عنوان const =card.getAttribute('data-title').toLowerCase();
+     const desc =card.querySelector('.app-desc').textContent.toLowerCase();
+     const matchCategory = (activeCategory === 'all') || (الفئة === الفئة النشطة)؛
+     const matchSearch = !searchQuery || title.includes(searchQuery) || desc.includes(searchQuery);
+     إذا (الفئة المتطابقة والبحث) {
+       Card.style.display = 'flex';
+     } أخرى {
+       Card.style.display = 'لا شيء';
+     }
+   });
+ }
+ filterButtons.forEach(btn => {
+   btn.addEventListener('click', () => {
+     filterButtons.forEach(b => b.classList.remove('active'));
+     btn.classList.add('active');
+     activeCategory = btn. getAttribute('فئة البيانات');
+     filterApps();
+   });
+ });
+ searchInput.addEventListener('input', (e) => {
+   searchQuery = e.target.value.trim().toLowerCase();
+   filterApps();
+ });
+</script>
+</الجسم>
+</html>
