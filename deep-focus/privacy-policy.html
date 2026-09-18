@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Deep Focus</title>
+  <meta name="description" content="Privacy Policy for Deep Focus - Minimal Habit Tracker & Focus Timer. 100% Private, Offline, and Ad-Free." />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --brand: #00C853;
+      --brand-soft: #5EFC82;
+      --brand-dark: #009624;
+      --brand-glow: rgba(0, 200, 83, 0.22);
+      
+      --bg: #09090b;
+      --card-bg: rgba(20, 20, 24, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover-border: rgba(0, 200, 83, 0.35);
+      
+      --text-main: #F3F4F6;
+      --text-muted: #9CA3AF;
+      --text-dim: #6B7280;
+      
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      font-size: 15.5px;
+      overflow-x: hidden;
+      position: relative;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(0, 200, 83, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 100% 100%, rgba(0, 200, 83, 0.05) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    .logo-wrapper {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      object-fit: cover;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 24px var(--brand-glow);
+      border: 1.5px solid rgba(255, 255, 255, 0.12);
+      transition: transform 0.25s ease;
+      background-color: #141416;
+      display: block;
+    }
+
+    .logo:hover {
+      transform: scale(1.04);
+    }
+
+    .app-title {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    .app-subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 14px;
+      border-radius: 30px;
+      background: rgba(0, 200, 83, 0.12);
+      border: 1px solid rgba(0, 200, 83, 0.3);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: var(--brand);
+      box-shadow: 0 0 8px var(--brand);
+    }
+
+    /* Meta bar */
+    .meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 32px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    .meta-bar strong {
+      color: var(--text-main);
+    }
+
+    /* Content Cards */
+    .section-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 30px 32px;
+      margin-bottom: 24px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .section-card:hover {
+      border-color: var(--card-hover-border);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+      letter-spacing: -0.2px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #D1D5DB;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 12px 0 16px 20px;
+      color: #D1D5DB;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: #FFFFFF;
+    }
+
+    /* Highlight Banner */
+    .highlight-banner {
+      background: linear-gradient(135deg, rgba(0, 200, 83, 0.15) 0%, rgba(0, 200, 83, 0.04) 100%);
+      border: 1px solid rgba(0, 200, 83, 0.35);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+
+    .highlight-banner p {
+      color: #E5E7EB;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    /* Contact Box */
+    .contact-box {
+      background: rgba(0, 200, 83, 0.08);
+      border: 1px solid rgba(0, 200, 83, 0.25);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .contact-email {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--brand);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .contact-email:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 24px;
+      border-top: 1px solid var(--card-border);
+      color: var(--text-dim);
+      font-size: 13.5px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 32px 18px 60px;
+      }
+      .app-title {
+        font-size: 26px;
+      }
+      .section-card {
+        padding: 22px 20px;
+      }
+      .section-title {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- App Header with Logo -->
+    <header class="header">
+      <div class="logo-wrapper">
+        <!-- Logo placed in the same folder as this HTML file -->
+        <img src="logo.png" alt="Deep Focus Icon" class="logo" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'88\' height=\'88\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%2300C853\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'%3E%3Cpath d=\'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\'/%3E%3Cpath d=\'m9 12 2 2 4-4\'/%3E%3C/svg%3E';" />
+      </div>
+      <h1 class="app-title">Deep Focus</h1>
+      <p class="app-subtitle">Minimal Habit Tracker & Focus Timer</p>
+      
+      <div class="badge-pill">
+        <span class="badge-dot"></span>
+        100% Private · Ad-Free · Offline
+      </div>
+    </header>
+
+    <!-- Meta Information Bar -->
+    <div class="meta-bar">
+      <div><strong>Effective Date:</strong> September 18, 2026</div>
+      
+    </div>
+
+    <!-- Section 1: Philosophy -->
+    <section class="section-card">
+      <h2 class="section-title">1. Our Core Privacy Philosophy</h2>
+      <p>
+        At <strong>Deep Focus</strong>, we believe that your personal habits, routines, thoughts, and daily goals belong solely to you. Your productivity journey is intensely personal, and it should never be harvested, monetized, tracked, or broadcast to remote servers.
+      </p>
+      
+    </section>
+
+    <!-- Section 2: Data Collection -->
+    <section class="section-card">
+      <h2 class="section-title">2. Information We Do NOT Collect</h2>
+      <p>Deep Focus does not collect any personal or sensitive information. Specifically:</p>
+      <ul>
+        <li><strong>No Account or Identity Data:</strong> You do not need to register, create an account, log in, or provide your name, email address, or phone number.</li>
+        <li><strong>No Habit or Routine Data:</strong> All habits, streaks, to-dos, focus timer sessions, notes, and milestones are saved strictly inside your local device storage.</li>
+        <li><strong>No Third-Party Analytics:</strong> We do not integrate third-party analytics SDKs (such as Google Analytics, Firebase Analytics, Meta Pixel, or Mixpanel).</li>
+        <li><strong>No Advertising SDKs:</strong> Deep Focus is 100% ad-free. We do not use advertising networks, meaning your device is never profiled or fingerprinted for targeted marketing.</li>
+        <li><strong>No Location or Audio Tracking:</strong> We never request access to your GPS location, microphone, or camera.</li>
+      </ul>
+    </section>
+
+    <!-- Section 3: Storage & Security -->
+    <section class="section-card">
+      <h2 class="section-title">3. On-Device Storage & Local Backups</h2>
+      <p>
+        All application data is stored in a private local database on your device using Hive CE storage.
+      </p>
+      <ul>
+        <li><strong>Local File Backups:</strong> If you choose to export your data or enable automatic backups, backups are saved exclusively to the local folder or directory you select on your phone. You retain 100% ownership and can delete or move these files at any time.</li>
+        <li><strong>Biometric App Lock:</strong> If you enable the App Lock feature, authentication is handled directly by your device's operating system (fingerprint or PIN) via native biometric APIs. Deep Focus never has access to or stores your biometric credentials.</li>
+      </ul>
+    </section>
+
+    <!-- Section 4: Device Permissions -->
+    <section class="section-card">
+      <h2 class="section-title">4. Device Permissions</h2>
+      <p>Deep Focus only requests permissions that are strictly necessary to deliver its core functionality:</p>
+      <ul>
+        <li><strong>Notifications (Optional):</strong> Required only if you schedule habit reminders or focus timer completion alerts. Reminders are generated locally on your device without communicating with external push notification servers.</li>
+        <li><strong>Biometric Authentication (Optional):</strong> Used only to unlock the app if you turn on the App Lock security option.</li>
+        <li><strong>Local Storage Access (Optional):</strong> Used only when you select a local folder to export or save automated backup files.</li>
+      </ul>
+    </section>
+
+    <!-- Section 5: Customer Support & Feedback -->
+    <section class="section-card">
+      <h2 class="section-title">5. User-Initiated Feedback & Support</h2>
+      <p>
+        If you choose to use the <em>"Contact Us"</em> or <em>"Send Feedback"</em> feature in the app, it opens your device's native email client to send an email to our support address.
+      </p>
+      <p>
+        The pre-filled draft may include voluntary device diagnostics (such as device model and OS version) to help us troubleshoot issues. You have complete control to inspect, edit, or delete any information in the email before pressing send. We use the information you send solely to address your question or bug report.
+      </p>
+    </section>
+
+    <!-- Section 6: Children's Privacy -->
+    <section class="section-card">
+      <h2 class="section-title">6. Children's Privacy</h2>
+      <p>
+        Because Deep Focus does not collect any personal data whatsoever, it complies with the Children's Online Privacy Protection Act (COPPA), General Data Protection Regulation (GDPR), and Amazon Appstore children's policy standards. We do not knowingly collect personal data from children under 13 (or under 16 in certain jurisdictions).
+      </p>
+    </section>
+
+    <!-- Section 7: Data Deletion -->
+    <section class="section-card">
+      <h2 class="section-title">7. How to Delete Your Data</h2>
+      <p>
+        Because all data is stored locally on your device, you have complete control over its retention:
+      </p>
+      <ul>
+        <li>You can reset or wipe all data at any time from <strong>Settings &rarr; Clear Progress</strong> or <strong>Wipe All Data</strong>.</li>
+        <li>Uninstalling the app from your device immediately and permanently deletes all local application data and database records.</li>
+      </ul>
+    </section>
+
+    <!-- Section 8: Policy Updates -->
+    <section class="section-card">
+      <h2 class="section-title">8. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect future app enhancements or legal obligations. Any updates will be posted to this page with a revised effective date. Your continued use of the app constitutes acceptance of the updated policy.
+      </p>
+    </section>
+
+    <!-- Section 9: Contact Us -->
+    <section class="section-card">
+      <h2 class="section-title">9. Contact Us</h2>
+      <p>
+        If you have any questions, suggestions, or concerns regarding this Privacy Policy or your privacy while using Deep Focus, please contact us directly:
+      </p>
+      <div class="contact-box">
+        <div><strong>Developer Support:</strong> Monsif Elmoudden</div>
+        <a href="mailto:monsifelmoudden3030@gmail.com" class="contact-email">monsifelmoudden3030@gmail.com</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Deep Focus. All rights reserved.</p>
+      <p style="margin-top: 6px; font-size: 12.5px;">
+        Designed for mindful productivity, discipline, and uncompromising privacy.
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
